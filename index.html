@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML and CSS Lesson</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="menu">
+        <!-- 10 Generate using Emmett -->
+        <!-- ul.menu>li.menu-options*3 -->
+        <li class="menu-options"><a href="#html" class="nav-link">HTML</a></li>
+        <li class="menu-options"><a href="#css" class="nav-link">CSS</a></li>
+        <li class="menu-options">
+          <a href="#form-container" class="nav-link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="main-wrapper">
+      <!-- 29 We wrap everything else to have option to scale everything else on the page. -->
+
+      <main id="main-heading">
+        <!-- 30 Dominant content of the document -->
+        <h1 id="main-text">HTML & CSS Lesson</h1>
+      </main>
+
+      <!-- 32 Semantic element buildout -->
+      <section id="html">
+        <h2>HTML</h2>
+        <div class="text-img-wrapper">
+          <p>
+            If you utilize the inspector tool and look under the hood of this
+            webpage, you will find this to be a &lt;section&gt tag. This is an
+            example of a semantic element. It's much easier to read than a bunch
+            of &lt;div&gt's. Might be a good idea to see how you can render an
+            element to the client as well (inside inspector as well).
+          </p>
+          <div class="img-container">
+            <img
+              class="p-img-logos"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2560px-HTML5_logo_and_wordmark.svg.png"
+              alt="some picture"
+            />
+          </div>
+        </div>
+      </section>
+
+      <div id="css">
+        <h2>CSS</h2>
+        <div class="text-img-wrapper">
+          <p>
+            This particular element is inside of a &lt;div&gt container. These
+            elements are containers for anything. They are the most popular but
+            less human-friendly when it comes to reading code.
+          </p>
+          <div class="img-container">
+            <img
+              class="p-img-logos"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/CSS3_logo_and_wordmark.svg/1920px-CSS3_logo_and_wordmark.svg.png"
+              alt="some picture 2"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div id="form-container">
+        <form action="submit" method="post" id="contact-form">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="Enter your email" />
+          <label for="message">Message:</label>
+          <textarea type="message" id="message" col="40" rows="10"></textarea>
+          <input type="submit" id="submit" />
+        </form>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <p>&copy Floria Karamdad</p>
+    </footer>
+  </body>
+</html>
